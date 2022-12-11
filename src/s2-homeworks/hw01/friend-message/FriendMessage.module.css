@@ -1,0 +1,82 @@
+.friendMessage {
+
+    margin-top: 47px;
+
+}
+
+.friendImageAndText {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.friendImageAndText img {
+
+    width: 48px;
+    height: 48px;
+    margin-right: 24px;
+
+}
+
+.friendText {
+
+    width: auto;
+    height: 60px;
+    left: 635px;
+    top: 168px;
+    background: #F5F7FB;
+    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
+    border-radius: 20px 20px 20px 0px;
+
+}
+
+.friendText:after {
+
+    content: ' ';
+    width: 0;
+    height: 0;
+    bottom: 36px;
+    position: relative;
+    left: auto;
+    top: auto;
+    right: 15px;
+    border: 16px solid;
+    border-color: transparent transparent #F5F7FB transparent;
+
+}
+
+.friendName {
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 13px;
+    margin-top: 8px;
+
+}
+
+.friendMessageText {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    margin: 3px 13px 8px 13px;
+
+}
+
+.friendTime {
+
+    margin-top: -5px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+    width: 45px;
+    text-align: center;
+
+}
