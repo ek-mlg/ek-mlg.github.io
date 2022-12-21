@@ -14,7 +14,7 @@ import GreetingContainer from './GreetingContainer'
 * 8 - в файле GreetingContainer.tsx вычислить количество добавленных и имя последнего (totalUsers, lastUserName) (сделал)
 * 9 - в файле Greeting.tsx дописать типизацию пропсов
 * 10 - в файле Greeting.tsx вычислить inputClass в зависимости от наличия ошибки (сделал)
-* 11 - сделать стили в соответствии с дизайном
+* 11 - сделать стили в соответствии с дизайном (сделал)
 * */
 
 // types

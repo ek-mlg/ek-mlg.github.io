@@ -3,14 +3,14 @@ import s from './Greeting.module.css'
 import {pureOnEnter} from "./GreetingContainer";
 
 type GreetingPropsType = {
-    name: string //
+    name: string
     setNameCallback: any // need to fix any
     addUser: any // need to fix any
     onBlur: any // need to fix any
     onEnter: any // need to fix any
-    error: string //
-    totalUsers: number //
-    lastUserName?: string | undefined //
+    error: string
+    totalUsers: number
+    lastUserName?: string | undefined
 }
 
 // презентационная компонента (для верстальщика)
