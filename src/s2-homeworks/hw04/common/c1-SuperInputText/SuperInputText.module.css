@@ -7,8 +7,6 @@
     border-radius: 5px;
     width: 372px;
     height: 36px;
-
-
 }
 
 .inputWrapper {
@@ -22,7 +20,6 @@
 
 .errorInput {
     border: 1px solid #CC1439;
-
 }
 
 .errorInput:focus {
