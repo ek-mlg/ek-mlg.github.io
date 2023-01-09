@@ -12,8 +12,9 @@ type PropsType = {
 export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
     const sidebarClass = s.sidebar
         + (open ? ' ' + s.open : '')
+    const test = s.test + (open ? s.displayOn : '')
     return (
-        <>
+        <div className={test}>
             <div className={s.background} onClick={handleClose}/>
             <aside className={sidebarClass}>
                 <button className={s.close} onClick={handleClose}>
@@ -51,6 +52,6 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                     </NavLink>
                 </nav>
             </aside>
-            </>
+            </div>
     )
 }

@@ -33,9 +33,14 @@
     margin-top: 63px;
     display: flex;
     flex-direction: column;
-    gap:45px;
+    gap: 45px;
 }
-
+.test {
+    display: none;
+}
+.displayOn{
+    display: flex;
+}
 .nav a {
     font-family: 'Montserrat', serif;
     font-style: normal;
@@ -49,7 +54,6 @@
 .nav a.active {
     color: #0059B2;
     text-decoration: underline;
-    margin-top: 63px;
 }
 
 .nav a:hover {
