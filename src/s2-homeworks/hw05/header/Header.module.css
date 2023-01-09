@@ -1,5 +1,7 @@
 .burgerMenuIcon {
     margin-left: 170px;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .header {
