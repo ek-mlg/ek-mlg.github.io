@@ -14,9 +14,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
         + (open ? ' ' + s.open : '')
     return (
         <>
-            {open && <>
-                <div className={s.background} onClick={handleClose}/>
-
+            <div className={s.background} onClick={handleClose}/>
             <aside className={sidebarClass}>
                 <button className={s.close} onClick={handleClose}>
                     <img
@@ -53,7 +51,6 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                     </NavLink>
                 </nav>
             </aside>
-                </>}
             </>
     )
 }
