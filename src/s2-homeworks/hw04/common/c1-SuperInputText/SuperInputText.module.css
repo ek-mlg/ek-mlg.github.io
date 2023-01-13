@@ -11,11 +11,19 @@
 
 .inputWrapper {
     display: flex;
-    flex-direction: column-reverse;
+    align-items: center;
 }
 
 .superInput {
-
+    height: 36px;
+    width: 276px;
+    padding-left: 24px;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
 }
 
 .errorInput {
