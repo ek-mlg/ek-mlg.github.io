@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     margin-right: 11px;
-
 }
 
 .radio::before {
@@ -29,5 +28,4 @@
     flex-direction: column;
     margin-left: 127px;
     gap: 21px;
-
 }
