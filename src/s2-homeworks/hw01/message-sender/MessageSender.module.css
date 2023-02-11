@@ -1,8 +1,8 @@
 .sendForm {
     display: flex;
+    justify-content: center;
     padding-top: 56px;
     padding-bottom: 32px;
-
 }
 
 .textarea {
