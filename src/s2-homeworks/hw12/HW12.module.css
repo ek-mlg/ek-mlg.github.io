@@ -19,5 +19,13 @@ html {
 }
 
 .select {
-
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    height: 36px;
+    width: 171px;
+    padding-top: 5px;
+    padding-left: 5px;
 }
