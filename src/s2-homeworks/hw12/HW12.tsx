@@ -20,10 +20,12 @@ const HW12 = () => {
     const change = (id: string) => {
         dispatch(changeThemeId(id))
     }
+    console.log(typeof themeId)
 
     useEffect(() => {
         document.documentElement.dataset.theme = themeId + ''
     }, [themeId])
+
 
     return (
         <div id={'hw12'}>
