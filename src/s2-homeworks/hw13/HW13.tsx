@@ -35,7 +35,8 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setImage(success200)
-                setText(res.data.errorText && res.data.info)
+                setText(res.data.errorText)
+
             })
             .catch((e) => {
                 if (e.response.status === 500) {
