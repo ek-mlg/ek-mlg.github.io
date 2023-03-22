@@ -16,17 +16,32 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
         page, itemsCountForPage, totalCount, onChange, id = 'hw15',
     }
 ) => {
-    const lastPage = totalCount // пишет студент // вычислить количество страниц
+    const lastPage = Math.ceil(totalCount / itemsCountForPage) // пишет студент // вычислить количество страниц
 
     const onChangeCallback = (event: any, page: number) => {
-        onChange(page, event.target.value ? +event.target.value : itemsCountForPage)
-
+        onChange(page, itemsCountForPage)
     }
 
-    const onChangeSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        onChangeCallback(event.target.value, page)
-
+    const onChangeSelect = (event: any) => {
+        onChange(page, Number(event.currentTarget.value))
     }
+
+    const options = [
+        {id: 4, value: 4},
+        {id: 7, value: 7},
+        {id: 10, value: 10},
+    ]
+
+    const mappedOptions = options
+        ? options.map((o) => (
+            <option
+                key={o.id}
+                value={o.id}
+            >
+                {o.value}
+            </option>
+        ))
+        : []
 
     return (
         <div className={s.pagination}>
@@ -47,16 +62,13 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
                 показать
             </span>
 
-            <SuperSelect
+            <select
                 id={id + '-pagination-select'}
                 value={itemsCountForPage}
-                options={[
-                    {id: 4, value: 4},
-                    {id: 7, value: 7},
-                    {id: 10, value: 10},
-                ]}
                 onChange={onChangeSelect}
-            />
+            >
+                {mappedOptions}
+            </select>
 
             <span className={s.text2}>
                 строк в таблице
